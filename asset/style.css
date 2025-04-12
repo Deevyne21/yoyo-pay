@@ -1,0 +1,902 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: #cfcfcf;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+a:hover {
+  cursor: pointer;
+  color: #2278ff;
+}
+
+header {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 40px;
+  background: white;
+  position: fixed;
+  z-index: 1000;
+}
+
+.logo img {
+  width: 150px;
+  /* height: 50px; */
+}
+
+.nav-links ul {
+  display: flex;
+  gap: 30px;
+}
+
+button {
+  padding: 10px 15px;
+  background: #2278ff;
+  border: none;
+  color: white;
+  box-shadow: -1px 1px 0px rgba(68, 39, 232, 0.75);
+}
+button a {
+  color: white;
+}
+
+button a:hover {
+  color: white;
+}
+
+.container {
+  width: 100%;
+  max-width: 1400px;
+  padding: 50px;
+  margin: 0 auto;
+}
+
+.hero {
+  background: #cfcfcf;
+  padding: 50px 0;
+  margin: 80px 0 0 0;
+}
+
+.hero-container {
+  display: flex;
+  gap: 40px;
+}
+
+.hero-left {
+  width: 50%;
+  background: white;
+  border-radius: 30px;
+  padding: 40px;
+}
+
+.left-content h1 {
+  width: 90%;
+  font-size: 35px;
+}
+
+.left-content h1 span {
+  color: #2278ff;
+}
+
+.left-content p {
+  width: 90%;
+  padding-top: 30px;
+  font-size: 16px;
+  line-height: 32px;
+  font-weight: 300;
+  /* font-family: 'Poppins'; */
+}
+
+.app-btn {
+  display: flex;
+  gap: 15px;
+  border: 2px solid white;
+  margin: 30px 0;
+}
+
+.playstore-btn {
+  border-radius: 50px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.appstore-btn {
+  background: #cfcfcf;
+  border: 1px solid #61adda;
+  border-radius: 50px;
+  color: #2278ff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.fa-app-store {
+  color: #2278ff;
+}
+
+.avatar-section {
+  width: 60%;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  border: 1px solid #cfcfcf;
+  border-radius: 10px;
+  margin: 30px 0;
+  padding: 10px 10px;
+}
+
+.avatar {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.avatar:not(:first-child) {
+  margin-left: -10px;
+}
+
+.download-count {
+  background: white;
+  padding: 5px 15px 0;
+}
+
+.hero-right {
+  width: 50%;
+  background: #2278ff;
+  border-radius: 30px;
+  position: relative;
+}
+
+.hero-right-image {
+  position: absolute;
+  bottom: 0;
+  transform: translateX(-50%);
+  left: 50%;
+  width: 100%;
+}
+
+.hero-right-image img {
+  display: block;
+  width: auto;
+  max-width: 100%;
+  height: auto;
+}
+
+/* Simplify-payment Section */
+
+.simplify-payment {
+  background: white;
+  padding: 50px 0;
+}
+
+.simplify-payment-container {
+  display: flex;
+  gap: 20px;
+}
+
+.simplify-payment-left {
+  width: 30%;
+  padding: 0 30px;
+}
+
+.simplify-payment-left h2 {
+  width: 80%;
+}
+
+.simplify-payment-para {
+  padding: 30px 0;
+  /* font-family: 'Poppins'; */
+}
+
+.rating {
+  color: #7f83a6;
+}
+
+.rating .num {
+  color: black;
+}
+
+.star {
+  color: #f2cb40;
+}
+
+.simplify-payment-right {
+  width: 70%;
+}
+
+.simplify-payment-right-wrapper {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.simplify-payment-right-box {
+  width: 46%;
+  align-items: center;
+  padding: 0 30px;
+  position: relative;
+}
+
+.simplify-payment-right-box h3 {
+  padding: 20px 0;
+  font-size: 16px;
+}
+
+.sub-heading {
+  position: relative;
+  /* left: 30px; */
+}
+
+.dash-lines {
+  content: '';
+  width: 90%;
+  border-bottom: 2px dashed #7f83a6;
+}
+
+.simplify-payment-right-box .dashline-p {
+  margin-bottom: 35px;
+}
+
+.icon {
+  background: #d5f5ec;
+  color: #2278ff;
+  position: relative;
+  right: 20px;
+  padding: 5px 10px;
+}
+
+/* How Yoyo Pay Works Section */
+
+.how-yoyo-pay-works-container {
+  padding: 50px 0;
+  display: flex;
+  gap: 40px;
+}
+
+.how-yoyo-pay-works-left {
+  width: 50%;
+  background-color: white;
+  border-radius: 30px;
+  padding: 40px;
+}
+
+.how-yoyo-pay-works-left h2 {
+  padding: 20px 0;
+}
+
+.how-yoyo-pay-works-left p {
+  width: 80%;
+  font-size: 18px;
+}
+
+.how-yoyo-pay-works-left-list {
+  padding: 20px 0;
+  position: relative;
+}
+
+.how-yoyo-pay-works-left-list p {
+  position: relative;
+  padding: 20px 0 0 0;
+}
+
+.how-yoyo-pay-works-left-list p i {
+  padding: 3px 5px;
+  border-radius: 50px;
+  background: #2278ff;
+  color: white;
+  position: relative;
+  right: 10px;
+}
+
+.how-yoyo-pay-works-left h2 span {
+  color: #2278ff;
+}
+
+.app-download {
+  background: #cfcfcf;
+  border: 1px solid #61adda;
+  border-radius: 50px;
+  margin-top: 20px;
+  color: #2278ff;
+  box-shadow: -1px 12px -7px rgba(0, 0, 0, 0.75);
+}
+
+.how-yoyo-pay-works-right {
+  width: 50%;
+  background: #2278ff;
+  border-radius: 30px;
+}
+
+.how-yoyo-pay-works-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.how-yoyo-pay-works-image img {
+  display: block;
+  position: relative;
+  max-width: 100%;
+  height: auto;
+  top: 6rem;
+}
+
+/* Customer Review Section */
+.customer-review {
+  padding: 50px 0;
+}
+
+.customer-review-container {
+  display: flex;
+}
+
+.customer-review-left {
+  width: 30%;
+}
+
+.customer-review-left h2 {
+  width: 60%;
+  font-size: 30px;
+  padding: 30px 0;
+}
+.customer-review-left p {
+  width: 75%;
+}
+
+.customer-review-right {
+  width: 70%;
+  background: white;
+  border-radius: 30px;
+  /* height: 300px; */
+}
+
+.customer-review-right-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  padding: 40px 50px;
+}
+
+.review-right-icon i {
+  background: #cfcfcf;
+  padding: 10px 10px;
+  border-radius: 50%;
+}
+
+.review-right-box {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  background: white;
+  height: 250px;
+  box-shadow: 0px 10px 14px rgba(37, 34, 34, 0.7);
+}
+
+.review-right-avatar {
+  padding: 20px;
+}
+
+.review-right-avatar img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.review-right-content {
+  padding: 0 10px 10px;
+}
+
+.review-right-content p {
+  padding-bottom: 10px;
+}
+
+span.customer-name {
+  color: #2278ff;
+}
+
+/* Get started section */
+.get-started {
+  padding: 50px 0;
+}
+
+.get-started-container {
+  display: flex;
+  justify-content: center;
+}
+
+.get-started-left {
+  width: 30%;
+}
+
+.get-started-left img {
+  width: 350px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 30px;
+}
+
+.get-started-right {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 20px;
+  background: #2278ff;
+  color: white;
+  border-radius: 30px;
+}
+
+.get-started-right p {
+  width: 60%;
+}
+
+.download-app {
+  background: #fff;
+  border: 1px solid #61adda;
+  border-radius: 50px;
+  color: #2278ff;
+  box-shadow: -1px 12px -7px rgba(0, 0, 0, 0.75);
+}
+
+/* Footer Section */
+
+footer {
+  padding: 50px 0;
+  background: white;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-left {
+  width: 40%;
+  padding: 0 20px;
+
+  /* padding: 30px; */
+}
+
+.footer-left p {
+  padding: 10px;
+}
+
+.footer-btn {
+  margin: 15px;
+}
+
+.footer-btn input {
+  padding: 15px 20px;
+  border: 1px solid #333;
+  margin-top: 10px;
+}
+
+.footer-btn button.sub {
+  padding: 15px 20px;
+  border: none;
+  box-shadow: -1px 1px 0px rgba(68, 39, 232, 0.75);
+}
+
+.footer-links {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.footer-links ul {
+  margin-right: 50px;
+}
+
+ul .home,
+.stories,
+.faqs,
+.help {
+  font-size: 14px;
+  margin: 10px 0;
+}
+
+.footer-active {
+  color: #cfcfcf;
+  padding: 10px 0;
+}
+
+.copyright-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 20px;
+}
+
+.social-icon i {
+  padding: 8px 10px;
+  color: #2278ff;
+  border-radius: 10px;
+  background: #d5f5ec;
+  margin: 20px 0 0 10px;
+}
+
+.copyright-tagline {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 70px 30px 30px;
+}
+
+.copyright {
+  padding-top: 25px;
+}
+
+.tagline p {
+  padding: 30px 0;
+  color: #2278ff;
+}
+
+.tagline a {
+  text-decoration: underline;
+  color: #2278ff;
+}
+
+/* Media Query */
+
+/* Maxwidth 1024px */
+
+@media (max-width: 1024px) {
+  .container {
+    width: 100%;
+    max-width: 1000px;
+  }
+
+  .hero-left h1 {
+    width: 100%;
+    font-size: 28px;
+  }
+
+  .left-content p {
+    width: 100%;
+  }
+
+  .avatar-section {
+    width: 90%;
+  }
+
+  .simplify-payment-left {
+    width: 40%;
+  }
+
+  .simplify-payment-left h2 {
+    width: 100%;
+  }
+
+  .simplify-payment-right {
+    width: 80%;
+  }
+
+  .simplify-payment-right-wrapper {
+    gap: 0;
+  }
+
+  .simplify-payment-right-box {
+    padding: 0 10px;
+  }
+
+  .how-yoyo-pay-works-left p {
+    width: 100%;
+  }
+
+  .how-yoyo-pay-works-image img {
+    top: 10.5rem;
+  }
+
+  .customer-review-left h2 {
+    width: 80%;
+  }
+
+  .customer-review-left p {
+    width: 85%;
+  }
+
+  .customer-review-right-container {
+    width: 100%;
+    gap: 10px;
+    padding: 40px 10px;
+  }
+
+  .review-right-avatar {
+    padding: 10px;
+  }
+
+  .get-started-container {
+    justify-content: space-between;
+    padding: 30px 0;
+  }
+
+  .get-started-left img {
+    width: 300px;
+    margin-right: 50px;
+  }
+
+  .get-started-right {
+    width: 60%;
+  }
+
+  .get-started-right p {
+    width: 90%;
+  }
+
+  .footer-links {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .footer-container {
+    align-items: normal;
+  }
+
+  .footer-left {
+    width: 50%;
+  }
+
+  .footer-btn input {
+    width: 60%;
+    padding: 15px 10px;
+  }
+}
+
+/* Max-width: 768px*/
+@media (max-width: 768px) {
+  .hero-container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .hero-left {
+    width: 70%;
+  }
+
+  .hero-right {
+    width: 70%;
+    height: 500px;
+  }
+  .how-yoyo-pay-works-container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .how-yoyo-pay-works-left {
+    width: 70%;
+  }
+
+  .how-yoyo-pay-works-right {
+    width: 70%;
+  }
+
+  .how-yoyo-pay-works-image {
+    width: 100%;
+    height: 500px;
+  }
+
+  .how-yoyo-pay-works-image img {
+    top: 5.8rem;
+  }
+
+  .simplify-payment-container {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .simplify-payment-left {
+    width: 100%;
+  }
+
+  .simplify-payment-right {
+    width: 100%;
+  }
+
+  .simplify-payment-right-wrapper {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0 0 50px;
+  }
+
+  .simplify-payment-right-box {
+    width: 50%;
+  }
+
+  .customer-review-container {
+    flex-direction: column;
+  }
+
+  .customer-review-left {
+    width: 100%;
+    padding-bottom: 30px;
+  }
+
+  .customer-review-left h2 {
+    width: 40%;
+  }
+  .customer-review-left p {
+    width: 70%;
+  }
+
+  .customer-review-right {
+    width: 100%;
+  }
+
+  .review-right-avatar {
+    padding: 10px;
+  }
+
+  .review-right-content p {
+    padding: 0 0 5px 10px;
+  }
+
+  .get-started-container {
+    flex-direction: column;
+    /* justify-content: center;
+    align-items: center; */
+  }
+
+  .get-started-left {
+    width: 100%;
+    padding-bottom: 40px;
+    /* margin-left: 70px; */
+  }
+
+  .get-started-left img {
+    width: 100%;
+    height: 50%;
+  }
+
+  .get-started-right {
+    width: 100%;
+    padding: 40px 20px;
+  }
+
+  .footer-left p {
+    width: 70%;
+  }
+}
+
+/* Media Query Max-width: 500px */
+@media (max-width: 500px) {
+  .hero-left {
+    width: 100%;
+  }
+
+  .hero-right {
+    width: 100%;
+  }
+
+  .simplify-payment-left h2 {
+    width: 75%;
+  }
+
+  .simplify-payment-right-wrapper {
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+
+  .simplify-payment-right-box {
+    width: 80%;
+  }
+
+  .dash-lines {
+    border-bottom: none;
+  }
+
+  .simplify-payment-right-box .dashline-p {
+    margin: 0;
+  }
+
+  .how-yoyo-pay-works-left {
+    width: 100%;
+  }
+
+  .how-yoyo-pay-works-right {
+    width: 100%;
+  }
+
+  .customer-review-left h2 {
+    width: 75%;
+  }
+
+  .customer-review-left p {
+    width: 85%;
+  }
+
+  .customer-review-right-container {
+    flex-direction: column;
+    gap: 50px;
+  }
+
+  .review-right-box {
+    width: 80%;
+  }
+
+  .review-right-icon {
+    display: none;
+  }
+
+  .review-right-avatar img {
+    width: 80px;
+    height: 80px;
+  }
+
+  .footer-container {
+    flex-direction: column;
+  }
+
+  .footer-left {
+    width: 80%;
+  }
+
+  .footer-links {
+    grid-template-columns: 1fr;
+    padding: 0 20px;
+  }
+
+  .copyright-tagline {
+    flex-direction: column;
+  }
+}
+
+/* @media Query max-width 375px */
+
+@media (max-width: 375px) {
+  .container {
+    width: 100%;
+    max-width: 400px;
+    margin: 0;
+    padding: 50px 10px;
+  }
+
+  .hero {
+    padding: 50px 10px;
+    /* margin: 50px 0; */
+  }
+
+  .hero-left {
+    width: 100%;
+    padding: 20px 20px;
+  }
+
+  .hero-right {
+    width: 100%;
+  }
+
+  .simplify-payment-left h2 {
+    width: 100%;
+  }
+
+  .customer-review-left {
+    padding-left: 20px;
+  }
+
+  .footer-left {
+    width: 100%;
+  }
+}
